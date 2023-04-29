@@ -1,15 +1,14 @@
-from pythonProject.To_Do_Functions import watch, add, delete, edit
+from pythonProject.To_Do_Functions import watch, add, delete, edit, read
 
 to_do_list = []
-
 
 while True:
 
     user_prompt = input("just type the number that you want to do from:"
-                        "\n            1. watch to dos list" 
+                        "\n            1. watch to dos list"
                         "\n            2. add new to do"
                         "\n            3. delete a to do"
-                        "\n            4. edit a to do" 
+                        "\n            4. edit a to do"
                         "\nand press enter: ".title())
 
     match user_prompt:
@@ -17,14 +16,14 @@ while True:
             watch()
 
         case '2':
-            to_do_list = watch()
+            to_do_list = read()
             add(to_do_list)
-            watch()
+#            watch()
         case '3':
-            to_do_list = watch()
+            to_do_list = read()
             delete(to_do_list)
-            watch()
+#            watch()
         case '4':
-            to_do_list = watch()
+            to_do_list = read()
             edit(to_do_list)
-            watch()
+#            watch()
