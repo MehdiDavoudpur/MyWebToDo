@@ -34,5 +34,3 @@ while True:
         show()
     else:
         exit()
-
-
