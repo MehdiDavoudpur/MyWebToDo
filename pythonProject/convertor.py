@@ -22,7 +22,7 @@ while True:
     print(event, value)
     print(value['_foot_'])
     if event == 'Exit':
-        exit()
+        break
     try:
         foot = float(value['_foot_'])
         inches = float(value['_inches_'])
