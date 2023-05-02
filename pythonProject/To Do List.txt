@@ -3,5 +3,7 @@ Create Front End
 Create New Music
 Eat Dinner
 Take A Shower
-Listen To Podcast
 Meet Bahar
+Go To Shop
+Practice Python
+Clean The Code
