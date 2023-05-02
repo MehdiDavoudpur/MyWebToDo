@@ -38,6 +38,6 @@ while True:
             delete(to_do_to_delete)
             show()
         except IndexError:
-            print("have an error!!")
+            Sg.Popup('please select a to do to delete'.title())
     else:
         exit()

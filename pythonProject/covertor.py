@@ -32,4 +32,4 @@ while True:
             window['_meter_'].update(value=f'{meter} meters')
 
     except ValueError:
-        print('an error happened!')
+        Sg.Popup('please fill the empty text boxes by numbers!'.title())
