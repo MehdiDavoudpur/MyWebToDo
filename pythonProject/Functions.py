@@ -8,8 +8,8 @@ def read(a_filepath):
     return to_do_list
 
 
-def add(to_do_new):
-    to_do_list = read()
+def add(a_filepath, to_do_new):
+    to_do_list = read(a_filepath)
     to_do_new = '\n' + to_do_new.title()
     to_do_list.append(to_do_new)
     with open('To_Do_List.txt', 'w') as file:
