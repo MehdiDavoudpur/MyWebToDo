@@ -23,12 +23,10 @@ window = Sg.Window("to do app".title(),
 
 while True:
     event, value = window.read()
-    print(event, value)
     if event == 'Select':
         window['-Add-'].update(value=value['-LIST-'][0])
     elif event == 'Add':
         to_do_new = value['-Add-']
-        print(to_do_new)
         if to_do_new != '':
             add(to_do_new)
             show()
@@ -38,7 +36,6 @@ while True:
     elif event == 'Delete':
         try:
             to_do_to_delete = value['-LIST-'][0]
-            print(to_do_to_delete)
             delete(to_do_to_delete)
             show()
         except IndexError:
