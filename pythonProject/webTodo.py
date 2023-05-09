@@ -3,7 +3,12 @@ from Functions import read, delete, add
 
 my_filepath = "C:/Users/Mehdi/PycharmProjects/pythonProject/To_Do_List.txt"
 
-new_todo = st.text_input(label="enter new todo".title())
+
+def get_new_todo():
+    add(my_filepath, st.session_state['n_todo'])
+
+
+new_todo = st.text_input(label='', placeholder="enter new todo".title(), key='n_todo', on_change=get_new_todo)
 
 button_add = st.button('Add')
 
