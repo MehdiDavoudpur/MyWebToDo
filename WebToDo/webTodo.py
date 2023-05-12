@@ -10,7 +10,7 @@ def get_new_todo():
 
 new_todo = st.text_input(label='', placeholder="enter new todo".title(), key='n_todo', on_change=get_new_todo)
 
-todos = ["a","b","c","d","e"]
+todos = read(my_filepath)
 
 for key, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=key)
