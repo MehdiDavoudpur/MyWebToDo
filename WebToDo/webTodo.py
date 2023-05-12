@@ -1,7 +1,7 @@
 import streamlit as st
 from Functions import read, delete, add
 
-my_filepath = '/WebToDo/To_Do_List.txt'
+my_filepath = 'ToDoList.txt'
 
 
 def get_new_todo():
