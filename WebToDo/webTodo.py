@@ -19,6 +19,7 @@ except FileNotFoundError:
 
 st.write(os.path.abspath('To_Do_List.txt'))
 print(os.path.abspath('To_Do_List.txt'))
+print("Hello")
 
 for key, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=key)
