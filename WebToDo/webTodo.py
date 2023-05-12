@@ -1,7 +1,7 @@
 import streamlit as st
 from Functions import read, delete, add
 
-my_filepath = 'https://raw.githubusercontent.com/MehdiDavoudpur/MyWebToDo/master/WebToDo/To_Do_List.txt'
+my_filepath = '/WebToDo/To_Do_List.txt'
 
 
 def get_new_todo():
@@ -10,7 +10,7 @@ def get_new_todo():
 
 new_todo = st.text_input(label='', placeholder="enter new todo".title(), key='n_todo', on_change=get_new_todo)
 
-todos = read(my_filepath)
+todos = ["a","b","c","d","e"]
 
 for key, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=key)
