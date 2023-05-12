@@ -1,11 +1,14 @@
 message_back = "you backed to main menu".title()
 message_wrong = "you typed wrong syntax.".title()
 
+try:
+    def read(a_filepath):
+        with open(a_filepath, 'r') as file:
+            to_do_list = file.readlines()
+        return to_do_list
 
-def read(a_filepath):
-    with open(a_filepath, 'r') as file:
-        to_do_list = file.readlines()
-    return to_do_list
+except FileNotFoundError:
+    print("file not found")
 
 
 def add(a_filepath, to_do_new):
