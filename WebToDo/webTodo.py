@@ -1,5 +1,6 @@
 import streamlit as st
 from Functions import read, delete, add
+import os
 
 my_filepath = 'To_Do_List.txt'
 
@@ -15,6 +16,7 @@ try:
 except FileNotFoundError:
     with open('To_Do_List.txt', 'w') as file:
         todos = read(my_filepath)
+        st.write(os.path.abspath('To_Do_List.txt'))
 
 for key, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=key)
