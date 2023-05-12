@@ -2,7 +2,7 @@ import streamlit as st
 from Functions import read, delete, add
 import os
 
-my_filepath = 'To_Do_List.txt'
+my_filepath = 'mywebtodo/webtodo/textFiles/To_Do_List.txt'
 
 
 def get_new_todo():
@@ -14,7 +14,7 @@ new_todo = st.text_input(label='', placeholder="enter new todo".title(), key='n_
 try:
     todos = read(my_filepath)
 except FileNotFoundError:
-    with open('To_Do_List.txt', 'w') as file:
+    with open('mywebtodo/webtodo/textFiles/To_Do_List.txt', 'w') as file:
         todos = read(my_filepath)
 
 st.write(os.path.abspath('To_Do_List.txt'))
