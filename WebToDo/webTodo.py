@@ -17,8 +17,8 @@ except FileNotFoundError:
     with open('/app/mywebtodo/List.txt', 'w') as file:
         todos = read(my_filepath)
 
-st.write(os.path.abspath('To_Do_List.txt'))
-print(os.path.abspath('To_Do_List.txt'))
+st.write(os.path.abspath('List.txt'))
+print(os.path.abspath('List.txt'))
 print("Hello")
 
 for key, todo in enumerate(todos):
